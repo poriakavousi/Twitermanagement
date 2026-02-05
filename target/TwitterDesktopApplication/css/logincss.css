@@ -1,0 +1,97 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.box {
+    width: 400px;
+    padding: 40px;
+    text-align: center;
+    border-radius: 16px;
+    background: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.box h1 {
+    font-weight: 700;
+    font-size: 28px;
+    margin-bottom: 30px;
+    text-shadow: 0 0 8px rgba(255,255,255,0.2);
+}
+.box input[type="text"],
+.box input[type="password"] {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    width: 100%;
+    padding: 12px 5px;
+    margin-bottom: 25px;
+    font-size: 16px;
+    color: #fff;
+    outline: none;
+    transition: border-color 0.3s ease;
+    text-align: left;
+}
+
+.box input[type="text"]:focus,
+.box input[type="password"]:focus {
+    border-bottom-color: #1DA1F2;
+}
+
+.box input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.box input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 25px;
+    background: #1DA1F2;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 15px;
+}
+
+.box input[type="submit"]:hover {
+    background: #1a91da;
+    box-shadow: 0 0 15px rgba(29, 161, 242, 0.4);
+}
+
+.box a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.box a:hover {
+    color: #1DA1F2;
+}

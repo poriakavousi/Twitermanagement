@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    direction: rtl;
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+    background: linear-gradient(to right top, #1e3c72, #2a5298);
+    background-attachment: fixed;
+}
+
+.mention-page-container {
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 20px;
+
+    /* --- Glassmorphism Effect --- */
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px); /* For Safari */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.error-message {
+    text-align: center;
+    color: #fff;
+}
+.error-message h1 {
+    color: #ff6b6b;
+}
+.error-message p {
+    font-size: 1.1em;
+}
+
+.tweet-content {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    line-height: 1.5;
+    color: #fff;
+}
+
+.mention-form-container h3 {
+    color: #fff;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    margin-bottom: 15px;
+}
+
+.mention-form-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.mention-form-container textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    font-size: 1em;
+    min-height: 80px;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+.mention-form-container textarea::placeholder {
+    color: #ddd;
+}
+
+.mention-form-container input[type="submit"] {
+    background-color: #1da1f2;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    align-self: flex-start;
+    transition: background-color 0.3s;
+}
+
+.mention-form-container input[type="submit"]:hover {
+    background-color: #0c85d0;
+}
+
+.mention-list-container {
+    margin-top: 30px;
+}
+
+.mention-list-container h3 {
+    color: #f0f0f0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 10px;
+}
+
+.mention-item {
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.mention-item:last-child {
+    border-bottom: none;
+}
+
+.mention-item p {
+    margin: 0;
+    color: #f0f0f0;
+}

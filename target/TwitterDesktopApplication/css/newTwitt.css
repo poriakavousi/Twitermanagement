@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #15202B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: "Segoe UI",-apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",sans-serif;
+}
+
+.tweet-box {
+    width: 600px;
+    border: 1px solid #38444d;
+    border-radius: 15px;
+    padding: 20px;
+    background-color: #192734;
+}
+
+.tweet-box-input {
+    display: flex;
+    align-items: flex-start;
+}
+
+.profile-circles {
+    display: flex;
+    margin-right: 15px;
+    padding-top: 10px;
+}
+
+.circle {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+
+.circle.red { background-color: #ff605c; }
+.circle.green { background-color: #ffbd44; }
+.circle.blue { background-color: #00ca4e; }
+
+.tweet-box-input form {
+    width: 100%;
+}
+
+.tweet-box-input textarea {
+    width: 100%;
+    background: transparent;
+    border: none;
+    resize: none;
+    color: #fff;
+    font-size: 20px;
+    padding-top: 10px;
+    outline: none;
+    height: 100px;
+}
+
+.tweet-box-input textarea::placeholder {
+    color: #8899a6;
+}
+
+.tweet-box-input button {
+    background-color: #1DA1F2;
+    color: white;
+    border: none;
+    border-radius: 9999px;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    float: right;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.tweet-box-input button:hover {
+    background-color: #1a91da;
+}
